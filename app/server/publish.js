@@ -3,3 +3,8 @@
  *  this.ready();
  * });
  */
+
+
+Meteor.publish('players', function (/* args */) {
+  return Players.find();
+});
